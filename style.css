@@ -1,0 +1,101 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(177deg, rgba(2,0,36,1) 0%, rgba(9,51,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.exterior {
+    display: flex;
+    width: 700px;
+    gap: 20px;
+    margin: 20px;
+}
+.exterior img {
+    width: 100%;
+    border: 3px solid red;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5px;
+}
+.text {
+    margin: 30px;
+    width: 50%;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    line-height: 1.5;
+    border: 3px solid #111;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 800;
+}
+
+/* Responsive */
+@media only screen and (max-width:768px) {
+    .exterior {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%;
+        gap: 5px;
+    }
+    .exterior img {
+        width: 100%;
+    }
+    .text {
+        width: 50%;
+        margin-left: 40px;
+    }
+    p {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+/* Bedroom & Bathroom */
+.interior {
+    display: flex;
+    width: 700px;
+    gap: 20px;
+    margin: 20px;
+
+}
+.interior img {
+    border: 3px solid red;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5px;
+    width: 100%;
+}
+.interior {
+    width: 700px;
+}
+p {
+    width: 50%;
+    margin: auto;
+}
+
+/* Responsive for Combo */
+@media only screen and (max-width:768px) {
+    .interior {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 5px;       
+    }
+    .interior {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .interior img {
+        width: 100%;
+    }
+    p {
+        width: 100%;
+        font-size: 14px;
+    }
+}
