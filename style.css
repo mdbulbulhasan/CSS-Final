@@ -35,9 +35,10 @@ header .mobile {
     text-transform: uppercase;
 }
 /* For Responsiveness */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
     header .mobile{
         display: contents;
+        text-align: center;
     }
     .navbar ul {
         display: none;
@@ -71,9 +72,10 @@ p {
     font-weight: 800;
 }
 /* Responsive */
-@media only screen and (max-width:768px) {
+@media screen and (min-width:320px) and (max-width: 480px) {
     .exterior {
         width: 70%;
+        text-align: center;
     }
     .exterior img {
         width: 100%;
@@ -86,8 +88,27 @@ p {
     p {
         width: 100%;
         font-size: 12px;
+        text-align: center;
     }
 }
+@media screen and (min-width: 481px) and (max-width:768px) {
+    .exterior {
+        width: 70%;
+    }
+    .exterior img {
+        width: 100%;
+        height: 400px;
+    }
+    .text {
+        width: 50%;
+        margin-left: 40px;
+    }
+    p {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
 /* Bedroom & Bathroom */
 .interior {
     margin: 50px;
@@ -102,7 +123,26 @@ p {
     border-radius: 5px;
 }
 /* Responsive for Combo */
-@media only screen and (max-width:768px) {
+@media screen and (min-width:320px) and (max-width: 480px) {
+    .interior {
+        width: 70%;
+        text-align: center;
+    }
+    .interior img {
+        width: 100%;
+        height: 200px;
+    }
+    .text {
+        width: 50%;
+        margin-left: 40px;
+    }
+    p {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 481px) and (max-width:768px) {
     .interior {
         width: 70%;
     }
@@ -123,7 +163,27 @@ p {
     border-radius: 5px;
 }
 /* For Responsive */
-@media only screen and (max-width:768px) {
+@media screen and (min-width:320px) and (max-width: 480px) {
+    .interior2 {
+        width: 70%;
+        text-align: center;
+    }
+    .interior2 img {
+        width: 100%;
+        height: 200px;
+    }
+    .text {
+        width: 50%;
+        margin-left: 40px;
+    }
+    p {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+/* For Responsive */
+@media screen and (min-width: 481px) and (max-width:768px) {
     .interior2 {
         width: 70%;
     }
@@ -142,7 +202,26 @@ p {
     border: 3px solid red;
     border-radius: 5px;
 }
-@media only screen and (max-width:768px) {
+@media screen and (min-width:320px) and (max-width: 480px) {
+    .facilities {
+        width: 70%;
+        text-align: center;
+    }
+    .facilities img {
+        width: 100%;
+        height: 200px;
+    }
+    .text {
+        width: 50%;
+        margin-left: 40px;
+    }
+    p {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 481px) and (max-width:768px) {
     .facilities {
         width: 70%;
     }
