@@ -2,6 +2,47 @@ body {
     background: rgb(2,0,36);
     background: linear-gradient(177deg, rgba(2,0,36,1) 0%, rgba(9,51,121,1) 35%, rgba(0,212,255,1) 100%);
 }
+header {
+    text-align: center;
+    margin: 2% 20%;
+    background: crimson;
+    padding: 10px;
+    border-radius: 5px;
+}
+header .mobile {
+    display: none;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 20px;
+}
+.navbar ul li {
+    list-style: none;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    font-weight: 600;
+}
+.navbar ul li a:hover {
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease-in;
+    text-transform: uppercase;
+}
+/* For Responsiveness */
+@media only screen and (max-width: 768px) {
+    header .mobile{
+        display: contents;
+    }
+    .navbar ul {
+        display: none;
+    }
+}
 .exterior {
     margin: 50px;
     text-align: center;
@@ -46,9 +87,6 @@ p {
         width: 100%;
         font-size: 12px;
     }
-}
-@media only screen and (max-width:768px) {
-    
 }
 /* Bedroom & Bathroom */
 .interior {
